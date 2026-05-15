@@ -137,46 +137,27 @@ func (e *Encoder) EncodeSVG(b *chess.Board) error {
 	canvas.Start(boardWidth, boardHeight)
 	canvas.Rect(0, 0, boardWidth, boardHeight)
 
-	ranks := orderOfRanks
-	files := orderOfFiles
-	if e.perspective == chess.Black {
-		ranks = orderOfRanksBlack
-		files = orderOfFilesBlack
-	}
+	// Pre-calculate color hex strings for performance optimization
+	lightHex := colorToHex(e.light)
+	darkHex := colorToHex(e.dark)
+
+	// Get ranks and files based on perspective
+	ranks, files := e.getRanksAndFiles()
+
+	// Render all squares
 	for i, rank := range ranks {
 		for j, file := range files {
 			x := j * sqHeight
 			y := i * sqHeight
 			sq := chess.NewSquare(file, rank)
-			c := e.colorForSquare(sq)
-			canvas.Rect(x, y, sqWidth, sqHeight, "fill: "+colorToHex(c))
-			markColor, ok := e.marks[sq]
-			if ok {
-				_, _, _, a := markColor.RGBA()
-				opacity := float64(a) / 0xffff
-				canvas.Rect(x, y, sqWidth, sqHeight, fmt.Sprintf("fill-opacity:%f;fill: %s", opacity, colorToHex(markColor)))
-			}
-			// draw piece
-			p := boardMap[sq]
-			if p != chess.NoPiece {
-				xml := pieceXML(x, y, p)
-				if _, err := io.WriteString(canvas.Writer, xml); err != nil {
-					return err
-				}
-			}
-			// draw rank text on file A
-			txtColor := e.colorForText(sq)
-			if j == 0 {
-				style := "font-size:11px;fill: " + colorToHex(txtColor)
-				canvas.Text(x+(sqWidth*1/20), y+(sqHeight*5/20), sq.Rank().String(), style)
-			}
-			// draw file text on rank 1
-			if i == 7 {
-				style := "text-anchor:end;font-size:11px;fill: " + colorToHex(txtColor)
-				canvas.Text(x+(sqWidth*19/20), y+sqHeight-(sqHeight*1/15), sq.File().String(), style)
+
+			if err := e.renderSquare(canvas, boardMap, sq, i, j, x, y, lightHex, darkHex); err != nil {
+				return err
 			}
 		}
 	}
+
+	// Render arrows
 	for i, arrow := range e.arrows {
 		var xml string
 		if isKnightMove(arrow.from, arrow.to) {
@@ -189,6 +170,80 @@ func (e *Encoder) EncodeSVG(b *chess.Board) error {
 		}
 	}
 	canvas.End()
+	return nil
+}
+
+// getRanksAndFiles returns the ranks and files in the correct order based on perspective
+func (e *Encoder) getRanksAndFiles() ([]chess.Rank, []chess.File) {
+	if e.perspective == chess.Black {
+		return orderOfRanksBlack, orderOfFilesBlack
+	}
+	return orderOfRanks, orderOfFiles
+}
+
+// renderMark renders a colored mark overlay on a square if one exists
+func (e *Encoder) renderMark(canvas *svg.SVG, sq chess.Square, x, y int) {
+	markColor, ok := e.marks[sq]
+	if !ok {
+		return
+	}
+	_, _, _, a := markColor.RGBA()
+	opacity := float64(a) / 0xffff
+	canvas.Rect(x, y, sqWidth, sqHeight, fmt.Sprintf("fill-opacity:%f;fill: %s", opacity, colorToHex(markColor)))
+}
+
+// renderPiece renders a chess piece on a square if one exists
+func (e *Encoder) renderPiece(canvas *svg.SVG, boardMap map[chess.Square]chess.Piece, sq chess.Square, x, y int) error {
+	p := boardMap[sq]
+	if p == chess.NoPiece {
+		return nil
+	}
+	xml := pieceXML(x, y, p)
+	if _, err := io.WriteString(canvas.Writer, xml); err != nil {
+		return err
+	}
+	return nil
+}
+
+// renderCoordinateText renders the rank and file labels on the board edges
+func (e *Encoder) renderCoordinateText(canvas *svg.SVG, sq chess.Square, i, j, x, y int) {
+	txtColor := e.colorForText(sq)
+	txtColorHex := colorToHex(txtColor)
+
+	// draw rank text on file A (first column)
+	if j == 0 {
+		style := "font-size:11px;fill: " + txtColorHex
+		canvas.Text(x+(sqWidth*1/20), y+(sqHeight*5/20), sq.Rank().String(), style)
+	}
+
+	// draw file text on rank 1 (last row)
+	if i == 7 {
+		style := "text-anchor:end;font-size:11px;fill: " + txtColorHex
+		canvas.Text(x+(sqWidth*19/20), y+sqHeight-(sqHeight*1/15), sq.File().String(), style)
+	}
+}
+
+// renderSquare renders a complete square including background, mark, piece, and coordinate text
+func (e *Encoder) renderSquare(canvas *svg.SVG, boardMap map[chess.Square]chess.Piece, sq chess.Square, i, j, x, y int, lightHex, darkHex string) error {
+	// Render square background
+	sqColor := e.colorForSquare(sq)
+	sqHex := darkHex
+	if sqColor == e.light {
+		sqHex = lightHex
+	}
+	canvas.Rect(x, y, sqWidth, sqHeight, "fill: "+sqHex)
+
+	// Render mark overlay if present
+	e.renderMark(canvas, sq, x, y)
+
+	// Render piece if present
+	if err := e.renderPiece(canvas, boardMap, sq, x, y); err != nil {
+		return err
+	}
+
+	// Render coordinate text
+	e.renderCoordinateText(canvas, sq, i, j, x, y)
+
 	return nil
 }
 
