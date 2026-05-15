@@ -462,7 +462,12 @@ func squareCenter(sq chess.Square, perspective chess.Color) (float32, float32) {
 }
 
 func squareOffset(sq chess.Square, offset int) chess.Square {
-	return chess.Square(int(sq) + offset)
+	result := int(sq) + offset
+	// Validate result is within valid square range (0-63)
+	if result < 0 || result > 63 {
+		return sq // Return original square if offset would be invalid
+	}
+	return chess.Square(result)
 }
 
 var (

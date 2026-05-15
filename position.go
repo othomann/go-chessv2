@@ -21,7 +21,7 @@ package chess
 
 import (
 	"bytes"
-	"crypto/md5"
+	"crypto/sha256"
 	"encoding/binary"
 	"errors"
 	"fmt"
@@ -255,10 +255,10 @@ func (pos *Position) XFENString() string {
 	return fmt.Sprintf("%s %s %s %s %d %d", b, t, c, sq, pos.halfMoveClock, pos.moveCount)
 }
 
-// Hash returns a unique hash of the position.
-func (pos *Position) Hash() [16]byte {
+// Hash returns a unique hash of the position using SHA256.
+func (pos *Position) Hash() [32]byte {
 	b, _ := pos.MarshalBinary()
-	return md5.Sum(b)
+	return sha256.Sum256(b)
 }
 
 // MarshalText implements the encoding.TextMarshaler interface and
@@ -300,8 +300,15 @@ func (pos *Position) MarshalBinary() ([]byte, error) {
 		return nil, err
 	}
 	buf := bytes.NewBuffer(boardBytes)
+	// Check for overflow before conversion
+	if pos.halfMoveClock < 0 || pos.halfMoveClock > 255 {
+		return nil, fmt.Errorf("halfMoveClock out of range for uint8: %d", pos.halfMoveClock)
+	}
 	if err = binary.Write(buf, binary.BigEndian, uint8(pos.halfMoveClock)); err != nil {
 		return nil, err
+	}
+	if pos.moveCount < 0 || pos.moveCount > 65535 {
+		return nil, fmt.Errorf("moveCount out of range for uint16: %d", pos.moveCount)
 	}
 	if err = binary.Write(buf, binary.BigEndian, uint16(pos.moveCount)); err != nil {
 		return nil, err
@@ -346,12 +353,12 @@ func (pos *Position) UnmarshalBinary(data []byte) error {
 	}
 	pos.board = board
 	buf := bytes.NewBuffer(data[96:])
-	halfMove := uint8(pos.halfMoveClock)
+	var halfMove uint8
 	if err := binary.Read(buf, binary.BigEndian, &halfMove); err != nil {
 		return err
 	}
 	pos.halfMoveClock = int(halfMove)
-	moveCount := uint16(pos.moveCount)
+	var moveCount uint16
 	if err := binary.Read(buf, binary.BigEndian, &moveCount); err != nil {
 		return err
 	}

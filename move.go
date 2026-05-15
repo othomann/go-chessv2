@@ -120,6 +120,11 @@ func (m *Move) Children() []*Move {
 }
 
 func (m *Move) Number() int {
+	const maxInt = int(^uint(0) >> 1)
+	if m.number > uint(maxInt) {
+		// Handle overflow case - return max int
+		return maxInt
+	}
 	ret := int(m.number)
 	if ret == 0 { // 0 indicates the 'dummy' rootMove
 		ret = 1
@@ -140,6 +145,11 @@ func (m *Move) Ply() int {
 	}
 	if m.position == nil {
 		return 0
+	}
+	const maxInt = int(^uint(0) >> 1)
+	if m.number > uint(maxInt) {
+		// Handle overflow case
+		return maxInt
 	}
 	moveNumber := int(m.number)
 	// we reverse the color because the position is after the move has been played

@@ -36,14 +36,17 @@ func bindataRead(data []byte, name string) ([]byte, error) {
 	}
 
 	var buf bytes.Buffer
-	_, err = io.Copy(&buf, gz)
-	clErr := gz.Close()
-
-	if err != nil {
+	// Limit decompression to 10MB to prevent decompression bomb attacks
+	const maxDecompressedSize = 10 * 1024 * 1024
+	_, err = io.CopyN(&buf, gz, maxDecompressedSize)
+	if err != nil && err != io.EOF {
+		_ = gz.Close() // Ignore close error when copy failed
 		return nil, fmt.Errorf("Read %q: %v", name, err)
 	}
+	clErr := gz.Close()
+
 	if clErr != nil {
-		return nil, err
+		return nil, clErr
 	}
 
 	return buf.Bytes(), nil

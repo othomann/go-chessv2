@@ -95,6 +95,12 @@ func convertPolyglotCastleToUCI(fromFile, toFile, rank byte) (byte, byte, byte, 
 
 func (pm PolyglotMove) ToMove() Move {
 	var moveBuf [5]byte
+	// Validate ranges before conversion to prevent overflow
+	if pm.FromFile < 0 || pm.FromFile > 7 || pm.FromRank < 0 || pm.FromRank > 7 ||
+		pm.ToFile < 0 || pm.ToFile > 7 || pm.ToRank < 0 || pm.ToRank > 7 {
+		// Return invalid move if out of range
+		return Move{}
+	}
 	moveBuf[0] = 'a' + byte(pm.FromFile)
 	moveBuf[1] = '1' + byte(pm.FromRank)
 	moveBuf[2] = 'a' + byte(pm.ToFile)

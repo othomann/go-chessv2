@@ -147,8 +147,17 @@ func (UCINotation) Decode(pos *Position, s string) (*Move, error) {
 	}
 
 	// Convert directly instead of using map lookups
-	s1 := Square((s[0] - 'a') + (s[1]-'1')*8)
-	s2 := Square((s[2] - 'a') + (s[3]-'1')*8)
+	// Validate input before conversion to prevent overflow
+	file1, rank1 := int(s[0]-'a'), int(s[1]-'1')
+	file2, rank2 := int(s[2]-'a'), int(s[3]-'1')
+
+	if file1 < 0 || file1 > 7 || rank1 < 0 || rank1 > 7 ||
+		file2 < 0 || file2 > 7 || rank2 < 0 || rank2 > 7 {
+		return nil, fmt.Errorf("chess: invalid squares in UCI notation %q", s)
+	}
+
+	s1 := Square(file1 + rank1*8)
+	s2 := Square(file2 + rank2*8)
 
 	if s1 < A1 || s1 > H8 || s2 < A1 || s2 > H8 {
 		return nil, fmt.Errorf("chess: invalid squares in UCI notation %q", s)
