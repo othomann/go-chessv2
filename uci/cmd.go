@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/corentings/chess/v2"
+	"github.com/othomann/go-chess/v2"
 )
 
 // Cmd is a UCI compliant command.

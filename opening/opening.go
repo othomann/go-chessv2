@@ -4,7 +4,7 @@ package opening
 import (
 	"bytes"
 
-	"github.com/corentings/chess/v2"
+	"github.com/othomann/go-chess/v2"
 )
 
 // A Opening represents a specific sequence of moves from the staring position.

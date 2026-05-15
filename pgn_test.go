@@ -256,7 +256,6 @@ func TestBigPgn(t *testing.T) {
 }
 
 func TestBigBigPgn(t *testing.T) {
-	t.Skip("This test is too slow")
 	pgn := mustParsePGN("fixtures/pgns/big_big.pgn")
 	reader := strings.NewReader(pgn)
 

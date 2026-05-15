@@ -5,7 +5,7 @@
      xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect x="0" y="0" width="360" height="360" />
 <rect x="0" y="0" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="0 0 360 360">
+<g transform="translate(0,0)">
   <g style="opacity:1; fill:000000; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 9,39 L 36,39 L 36,36 L 9,36 L 9,39 z "
@@ -41,10 +41,10 @@
       d="M 11,14 L 34,14"
       style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
   </g>
-</svg>
+</g>
 <text x="2" y="11" style="font-size:11px;fill: #a57551" >8</text>
 <rect x="45" y="0" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-45 0 360 360">
+<g transform="translate(45,0)">
   <g style="opacity:1; fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18"
@@ -63,9 +63,9 @@
       d="M 24.55,10.4 L 24.1,11.85 L 24.6,12 C 27.75,13 30.25,14.49 32.5,18.75 C 34.75,23.01 35.75,29.06 35.25,39 L 35.2,39.5 L 37.45,39.5 L 37.5,39 C 38,28.94 36.62,22.15 34.25,17.66 C 31.88,13.17 28.46,11.02 25.06,10.5 L 24.55,10.4 z "
       style="fill:#ffffff; stroke:none;" />
   </g>
-</svg>
+</g>
 <rect x="90" y="0" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-90 0 360 360">
+<g transform="translate(90,0)">
   <g style="opacity:1; fill:none; fill-rule:evenodd; fill-opacity:1; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <g style="fill:#000000; stroke:#000000; stroke-linecap:butt;">
       <path
@@ -79,9 +79,9 @@
        d="M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18"
        style="fill:none; stroke:#ffffff; stroke-linejoin:miter;" />
   </g>
-</svg>
+</g>
 <rect x="135" y="0" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-135 0 360 360">
+<g transform="translate(135,0)">
   <g style="opacity:1; fill:000000; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <g style="fill:#000000; stroke:none;">
       <circle cx="6"    cy="12" r="2.75" />
@@ -112,9 +112,9 @@
        d="M 10.5,37.5 A 35,35 1 0 0 34.5,37.5"
        style="fill:none; stroke:#ffffff;" />
   </g>
-</svg>
+</g>
 <rect x="180" y="0" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-180 0 360 360">
+<g transform="translate(180,0)">
   <g style="fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
        d="M 22.5,11.63 L 22.5,6"
@@ -136,9 +136,9 @@
        d="M 11.5,30 C 17,27 27,27 32.5,30 M 11.5,33.5 C 17,30.5 27,30.5 32.5,33.5 M 11.5,37 C 17,34 27,34 32.5,37"
        style="fill:none; stroke:#ffffff;" />
   </g>
-</svg>
+</g>
 <rect x="225" y="0" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-225 0 360 360">
+<g transform="translate(225,0)">
   <g style="opacity:1; fill:none; fill-rule:evenodd; fill-opacity:1; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <g style="fill:#000000; stroke:#000000; stroke-linecap:butt;">
       <path
@@ -152,9 +152,9 @@
        d="M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18"
        style="fill:none; stroke:#ffffff; stroke-linejoin:miter;" />
   </g>
-</svg>
+</g>
 <rect x="270" y="0" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-270 0 360 360">
+<g transform="translate(270,0)">
   <g style="opacity:1; fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18"
@@ -173,9 +173,9 @@
       d="M 24.55,10.4 L 24.1,11.85 L 24.6,12 C 27.75,13 30.25,14.49 32.5,18.75 C 34.75,23.01 35.75,29.06 35.25,39 L 35.2,39.5 L 37.45,39.5 L 37.5,39 C 38,28.94 36.62,22.15 34.25,17.66 C 31.88,13.17 28.46,11.02 25.06,10.5 L 24.55,10.4 z "
       style="fill:#ffffff; stroke:none;" />
   </g>
-</svg>
+</g>
 <rect x="315" y="0" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-315 0 360 360">
+<g transform="translate(315,0)">
   <g style="opacity:1; fill:000000; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 9,39 L 36,39 L 36,36 L 9,36 L 9,39 z "
@@ -211,56 +211,56 @@
       d="M 11,14 L 34,14"
       style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
   </g>
-</svg>
+</g>
 <rect x="0" y="45" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="0 -45 360 360">
+<g transform="translate(0,45)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <text x="2" y="56" style="font-size:11px;fill: #ebd1a6" >7</text>
 <rect x="45" y="45" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-45 -45 360 360">
+<g transform="translate(45,45)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="90" y="45" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-90 -45 360 360">
+<g transform="translate(90,45)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="135" y="45" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-135 -45 360 360">
+<g transform="translate(135,45)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="180" y="45" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-180 -45 360 360">
+<g transform="translate(180,45)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="225" y="45" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-225 -45 360 360">
+<g transform="translate(225,45)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="270" y="45" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-270 -45 360 360">
+<g transform="translate(270,45)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="315" y="45" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-315 -45 360 360">
+<g transform="translate(315,45)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#000000; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="0" y="90" width="45" height="45" style="fill: #ebd1a6" />
 <text x="2" y="101" style="font-size:11px;fill: #a57551" >6</text>
 <rect x="45" y="90" width="45" height="45" style="fill: #a57551" />
@@ -285,11 +285,11 @@
 <rect x="90" y="180" width="45" height="45" style="fill: #ebd1a6" />
 <rect x="135" y="180" width="45" height="45" style="fill: #a57551" />
 <rect x="135" y="180" width="45" height="45" style="fill-opacity:0.2;fill: #ffff00" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-135 -180 360 360">
+<g transform="translate(135,180)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="180" y="180" width="45" height="45" style="fill: #ebd1a6" />
 <rect x="225" y="180" width="45" height="45" style="fill: #a57551" />
 <rect x="270" y="180" width="45" height="45" style="fill: #ebd1a6" />
@@ -304,52 +304,52 @@
 <rect x="270" y="225" width="45" height="45" style="fill: #a57551" />
 <rect x="315" y="225" width="45" height="45" style="fill: #ebd1a6" />
 <rect x="0" y="270" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="0 -270 360 360">
+<g transform="translate(0,270)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <text x="2" y="281" style="font-size:11px;fill: #a57551" >2</text>
 <rect x="45" y="270" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-45 -270 360 360">
+<g transform="translate(45,270)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="90" y="270" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-90 -270 360 360">
+<g transform="translate(90,270)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="135" y="270" width="45" height="45" style="fill: #a57551" />
 <rect x="135" y="270" width="45" height="45" style="fill-opacity:0.2;fill: #ffff00" />
 <rect x="180" y="270" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-180 -270 360 360">
+<g transform="translate(180,270)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="225" y="270" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-225 -270 360 360">
+<g transform="translate(225,270)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="270" y="270" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-270 -270 360 360">
+<g transform="translate(270,270)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="315" y="270" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-315 -270 360 360">
+<g transform="translate(315,270)">
   <path
     d="M 22,9 C 19.79,9 18,10.79 18,13 C 18,13.89 18.29,14.71 18.78,15.38 C 16.83,16.5 15.5,18.59 15.5,21 C 15.5,23.03 16.44,24.84 17.91,26.03 C 14.91,27.09 10.5,31.58 10.5,39.5 L 33.5,39.5 C 33.5,31.58 29.09,27.09 26.09,26.03 C 27.56,24.84 28.5,23.03 28.5,21 C 28.5,18.59 27.17,16.5 25.22,15.38 C 25.71,14.71 26,13.89 26,13 C 26,10.79 24.21,9 22,9 z "
     style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" />
-</svg>
+</g>
 <rect x="0" y="315" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="0 -315 360 360">
+<g transform="translate(0,315)">
   <g style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 9,39 L 36,39 L 36,36 L 9,36 L 9,39 z "
@@ -371,11 +371,11 @@
       d="M 11,14 L 34,14"
       style="fill:none; stroke:#000000; stroke-linejoin:miter;" />
   </g>
-</svg>
+</g>
 <text x="2" y="326" style="font-size:11px;fill: #ebd1a6" >1</text>
 <text x="42" y="357" style="text-anchor:end;font-size:11px;fill: #ebd1a6" >a</text>
 <rect x="45" y="315" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-45 -315 360 360">
+<g transform="translate(45,315)">
   <g style="opacity:1; fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18"
@@ -391,10 +391,10 @@
       transform="matrix(0.866,0.5,-0.5,0.866,9.693,-5.173)"
       style="fill:#000000; stroke:#000000;" />
   </g>
-</svg>
+</g>
 <text x="87" y="357" style="text-anchor:end;font-size:11px;fill: #a57551" >b</text>
 <rect x="90" y="315" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-90 -315 360 360">
+<g transform="translate(90,315)">
   <g style="opacity:1; fill:none; fill-rule:evenodd; fill-opacity:1; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <g style="fill:#ffffff; stroke:#000000; stroke-linecap:butt;">
       <path
@@ -408,10 +408,10 @@
       d="M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18"
       style="fill:none; stroke:#000000; stroke-linejoin:miter;" />
   </g>
-</svg>
+</g>
 <text x="132" y="357" style="text-anchor:end;font-size:11px;fill: #ebd1a6" >c</text>
 <rect x="135" y="315" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-135 -315 360 360">
+<g transform="translate(135,315)">
   <g style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 9 13 A 2 2 0 1 1  5,13 A 2 2 0 1 1  9 13 z"
@@ -441,10 +441,10 @@
       d="M 12,33.5 C 18,32.5 27,32.5 33,33.5"
       style="fill:none;" />
   </g>
-</svg>
+</g>
 <text x="177" y="357" style="text-anchor:end;font-size:11px;fill: #a57551" >d</text>
 <rect x="180" y="315" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-180 -315 360 360">
+<g transform="translate(180,315)">
   <g style="fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 22.5,11.63 L 22.5,6"
@@ -468,10 +468,10 @@
       d="M 11.5,37 C 17,34 27,34 32.5,37"
       style="fill:none; stroke:#000000;" />
   </g>
-</svg>
+</g>
 <text x="222" y="357" style="text-anchor:end;font-size:11px;fill: #ebd1a6" >e</text>
 <rect x="225" y="315" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-225 -315 360 360">
+<g transform="translate(225,315)">
   <g style="opacity:1; fill:none; fill-rule:evenodd; fill-opacity:1; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <g style="fill:#ffffff; stroke:#000000; stroke-linecap:butt;">
       <path
@@ -485,10 +485,10 @@
       d="M 17.5,26 L 27.5,26 M 15,30 L 30,30 M 22.5,15.5 L 22.5,20.5 M 20,18 L 25,18"
       style="fill:none; stroke:#000000; stroke-linejoin:miter;" />
   </g>
-</svg>
+</g>
 <text x="267" y="357" style="text-anchor:end;font-size:11px;fill: #a57551" >f</text>
 <rect x="270" y="315" width="45" height="45" style="fill: #a57551" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-270 -315 360 360">
+<g transform="translate(270,315)">
   <g style="opacity:1; fill:none; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18"
@@ -504,10 +504,10 @@
       transform="matrix(0.866,0.5,-0.5,0.866,9.693,-5.173)"
       style="fill:#000000; stroke:#000000;" />
   </g>
-</svg>
+</g>
 <text x="312" y="357" style="text-anchor:end;font-size:11px;fill: #ebd1a6" >g</text>
 <rect x="315" y="315" width="45" height="45" style="fill: #ebd1a6" />
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="360" height="360" viewBox="-315 -315 360 360">
+<g transform="translate(315,315)">
   <g style="opacity:1; fill:#ffffff; fill-opacity:1; fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;">
     <path
       d="M 9,39 L 36,39 L 36,36 L 9,36 L 9,39 z "
@@ -529,6 +529,24 @@
       d="M 11,14 L 34,14"
       style="fill:none; stroke:#000000; stroke-linejoin:miter;" />
   </g>
-</svg>
+</g>
 <text x="357" y="357" style="text-anchor:end;font-size:11px;fill: #a57551" >h</text>
-</svg>
+<svg>
+  <defs>
+    <marker 
+      id="head-0" 
+      orient="auto"
+      markerWidth="3"
+      markerHeight="4"
+      refX="0"
+      refY="1.5">
+      <path d="M0,0 V3 L2,1.5 Z" fill="#f7b54b" fill-opacity="75%" />
+    </marker>
+  </defs>
+  <path
+    marker-end="url(#head-0)"
+    stroke-width="8px"
+    d="M157.500000,277.500000 157.500000,217.500000"
+    stroke="#f7b54b"
+    stroke-opacity="75%" />
+</svg></svg>

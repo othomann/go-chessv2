@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/corentings/chess/v2"
-	"github.com/corentings/chess/v2/opening"
+	"github.com/othomann/go-chess/v2"
+	"github.com/othomann/go-chess/v2/opening"
 )
 
 func Find() {

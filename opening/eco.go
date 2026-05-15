@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/corentings/chess/v2"
+	"github.com/othomann/go-chess/v2"
 )
 
 // BookECO represents the Encyclopedia of Chess Openings https://en.wikipedia.org/wiki/Encyclopaedia_of_Chess_Openings

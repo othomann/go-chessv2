@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/corentings/chess/v2"
-	"github.com/corentings/chess/v2/uci"
+	"github.com/othomann/go-chess/v2"
+	"github.com/othomann/go-chess/v2/uci"
 )
 
 var engines = []string{"stockfish", "lc0"}
